@@ -1,4 +1,4 @@
-# memeory
+# memory
 A simple recreation of a classic game called memory.
 
 # The journey
@@ -6,7 +6,7 @@ Recreating this game was a really big learning oppertunity for me.
 
 When I started working on the javascript, it didn't take very long before I had worked myself into a corner.
 Here is a small example of my first code draft:
-(img/first-code-draft.png)
+(img/First-code-draft.png)
 
 As you can see, it isn't hard to realise why I was closing down the directions I could go in.
 After realising this, I learned the importance of scalability and flexibility.
@@ -21,6 +21,9 @@ I have not yet implemented some of the extra features that were suggested, but i
 The version you're looking at now is still very barebones.
 
 On the visual side, there is alot to be improved aswell.
+
+The published page:
+https://eliacools.github.io/memory/
 
 
 
