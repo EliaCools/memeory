@@ -1,4 +1,4 @@
-# memeory
+# memory
 A simple recreation of a classic game called memory.
 
 # The journey
