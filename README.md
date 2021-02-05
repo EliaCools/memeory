@@ -22,6 +22,9 @@ The version you're looking at now is still very barebones.
 
 On the visual side, there is alot to be improved aswell.
 
+The published page:
+https://eliacools.github.io/memory/
+
 
 
 
