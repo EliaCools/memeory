@@ -18,8 +18,8 @@ for (let i = 0; i <document.querySelectorAll('.memory-card').length ; i++) {
     var paircounter=0
 
 cards[i].addEventListener("click",function() {
-
-    if (document.querySelectorAll('.turn').length >= 2) {
+    const frontbackturn=4
+    if (document.querySelectorAll('.turn').length >= frontbackturn) {
 
     }else if(document.querySelectorAll('.back-face')[i].classList.contains("turn")){}
     else {
@@ -30,12 +30,15 @@ cards[i].addEventListener("click",function() {
 
 
     function myfunction() {
-          if(document.querySelectorAll('.turn').length === 1){
-              setTimeout(turnback,1500);
-              setTimeout(clearArray, 1000);
+        const maxturnedcards=2
+          if(document.querySelectorAll('.turn').length === maxturnedcards){
+              setTimeout(turnback,2000);
+              setTimeout(clearArray, 1200);
 
             }
              document.querySelectorAll('.back-face')[i].classList.add("turn")
+        //experiment here
+             document.querySelectorAll('.front-face')[i].classList.add("turn")
         }
 })
 
@@ -44,7 +47,7 @@ cards[i].addEventListener("click",function() {
             newarray.unshift(document.querySelectorAll('.back-face')[i].getAttribute('data-title'));
 
             if (newarray[0] === newarray[1]) {
-                setTimeout(pairfound,500)
+                setTimeout(pairfound,1000)
             }
         }
     }
@@ -58,6 +61,10 @@ cards[i].addEventListener("click",function() {
     }
 
     function pairfound(){
+
+        document.getElementById('actiontext').innerText="you have defeated "+newarray[0];
+        setTimeout(()=>document.getElementById('actiontext').innerText="",2000)
+
     document.querySelectorAll('.back-face').forEach(remove)
         function remove(item){
         if(item.getAttribute('data-title')===newarray[0]){
@@ -77,6 +84,7 @@ cards[i].addEventListener("click",function() {
             item.classList.add('paired-cards')
         }
         }
+
         paircounter+=1
         if(paircounter===8){
             endscreen()
@@ -89,6 +97,11 @@ cards[i].addEventListener("click",function() {
             function turnall(cards){
              cards.classList.remove("turn")
             }
+             document.querySelectorAll('.front-face').forEach(turnall)
+            function turnall(cards){
+             cards.classList.remove("turn")
+            }
+
     }
 
 
