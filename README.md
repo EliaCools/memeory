@@ -6,7 +6,7 @@ Recreating this game was a really big learning oppertunity for me.
 
 When I started working on the javascript, it didn't take very long before I had worked myself into a corner.
 Here is a small example of my first code draft:
-(memory/img/First-code-draft.png)
+(img/First-code-draft.png)
 
 As you can see, it isn't hard to realise why I was closing down the directions I could go in.
 After realising this, I learned the importance of scalability and flexibility.
