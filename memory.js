@@ -1,5 +1,11 @@
 (function(){
 
+    document.getElementById('start-button').addEventListener('click',()=>{
+        document.getElementById('start-page').classList.add('hide-game-board')
+        setTimeout(()=>document.getElementById('game-board').classList.remove('hide-game-board'),200)
+
+    })
+
 
     let cards = document.querySelectorAll('.memory-card')
     cards.forEach(sort);
@@ -62,8 +68,8 @@ cards[i].addEventListener("click",function() {
 
     function pairfound(){
 
-        document.getElementById('actiontext').innerText="you have defeated "+newarray[0];
-        setTimeout(()=>document.getElementById('actiontext').innerText="",2000)
+        document.getElementById('actiontext').innerText="you have defeated \n "+newarray[0];
+        setTimeout(()=>document.getElementById('actiontext').innerText="",3000)
 
     document.querySelectorAll('.back-face').forEach(remove)
         function remove(item){
@@ -86,7 +92,7 @@ cards[i].addEventListener("click",function() {
         }
 
         paircounter+=1
-        if(paircounter===8){
+        if(paircounter===10){
             endscreen()
         }
 

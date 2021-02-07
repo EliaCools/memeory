@@ -4,39 +4,43 @@
 <head>
     <title>memory</title>
     <link rel="stylesheet"   href="memory.css">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<!-- <div id="start-page"></div> -->
+
 <video autoplay muted loop id="myVideo">
-    <source src="img/Testvideo.mov" type="video/mp4">
+    <source src="img/8bit-test.mp4" type="video/mp4">
 </video>
-<div id="title-container"><h1 id="title">you are outnumbered! </h1></div>
-<div id="game-board">
-<div id="end-screen" class="end hide" > <div class="end-screen-cont"><p class="end hide end-screen-text ">You Win! </p><div class="button-container "><div class="center "><button class="end button-style" onClick="window.location.reload();">play again</button></div></div> </div></div>
+<div id="start-page"><div class="start-page-inner-container"><div class="start-page-text-container"><p class="start-page-text">  <span class="hero">hi Hero!</span> <br/> we need you help! <br/> All supervillains have banded together as an attempt to take over the world.<br/> Help us stop them before it is too late!<br/>
+    <span id="explanation">Find the matching memory cards to defeat the villains.</span><span id="start-button"> Battle!</span>
+</p></div></div></div>
+<div id="game-board" class="hide-game-board">
+<div id="end-screen" class="end hide" > <div class="end-screen-cont"><p class="end hide end-screen-text ">You Win! </p><div class="button-container "><div class="center "><span class="end end-screen-button" onClick="window.location.reload();">play again</span></div></div> </div></div>
 <div class="memory-card" data-title="mysterio"><img class="front-face" data-title="mysterio" alt="doge planet" src="img/mysterio.png"><img class="back-face pair-1 " data-title="mysterio" alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="mysterio"><img class="front-face" data-title="mysterio" alt="doge planet" src="img/mysterio.png"><img class="back-face pair-1 " data-title="mysterio" alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="Red-skull"><img class="front-face" data-title="red-skull" alt="dog with colors" src="img/red-skull.jpg"><img class="back-face pair-2 " data-title="red-skull" alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="Red-skull"><img class="front-face" data-title="red-skull" alt="dog with colors" src="img/red-skull.jpg"><img class="back-face pair-2 " data-title="red-skull" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="Rhino"><img class="front-face" data-title="rhino"  alt="mona-lisa-dab" src="img/rhino.jpg"><img class="back-face pair-2 " data-title="rhino"  alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="Rhino"><img class="front-face" data-title="rhino"  alt="rhino" src="img/rhino.jpg"><img class="back-face pair-2 " data-title="rhino"  alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="Rhino"><img class="front-face" data-title="rhino"  alt="rhino" src="img/rhino.jpg"><img class="back-face pair-2 " data-title="rhino"  alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="dr-doom"><img class="front-face" data-title="dr-doom" alt="dr-doom" src="img/dr-doom.jpg"><img class="back-face pair-2 " data-title="dr-doom" alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="dr-doom">><img class="front-face" data-title="dr-doom" alt="dr-doom" src="img/dr-doom.jpg"><img class="back-face pair-2 " data-title="dr-doom" alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="ghost-rider"><img class="front-face" data-title="ghost-rider" alt="ghost-rider" src="img/ghost-rider.jpg"><img class="back-face pair-2 " data-title="ghost-rider" alt="card back" src="img/villain-background.jpg"></div>
 <div class="memory-card" data-title="ghost-rider"><img class="front-face" data-title="ghost-rider" alt="ghost-rider" src="img/ghost-rider.jpg"><img class="back-face pair-2 " data-title="ghost-rider" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="Joker"><img class="front-face" data-title="joker" alt="man-meme" src="img/Joker.jpg"><img class="back-face pair-2 " data-title="joker" alt="joker" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="Joker"><img class="front-face" data-title="joker" alt="man-meme" src="img/Joker.jpg"><img class="back-face pair-2 " data-title="joker" alt="joker" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="dr-octopus"><img class="front-face" data-title="dr-octopus" alt="cat-big" src="img/dr-octopus.jpg"><img class="back-face pair-2 " data-title="dr-octopus" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="dr-octopus"><img class="front-face" data-title="dr-octopus" alt="cat-big" src="img/dr-octopus.jpg"><img class="back-face pair-2 " data-title="dr-octopus" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="venom"><img class="front-face" data-title="venom" alt="cat-diner" src="img/venom.jpg"><img class="back-face pair-2 " data-title="venom" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="venom"><img class="front-face" data-title="venom" alt="cat-diner" src="img/venom.jpg"><img class="back-face pair-2 " data-title="venom" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="loki"><img class="front-face" data-title="loki" alt="cat-diner" src="img/loki.jpg"><img class="back-face pair-2 " data-title="loki" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="loki"><img class="front-face" data-title="loki" alt="cat-diner" src="img/loki.jpg"><img class="back-face pair-2 " data-title="loki" alt="card back" src="img/villain-background.jpg"></div>
- <div class="memory-card" data-title="thanos"><img class="front-face" data-title="thanos" alt="cat-diner" src="img/thanos.png"><img class="back-face pair-2 " data-title="thanos" alt="card back" src="img/villain-background.jpg"></div>
-<div class="memory-card" data-title="thanos"><img class="front-face" data-title="thanos" alt="cat-diner" src="img/thanos.png"><img class="back-face pair-2 " data-title="thanos" alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="Joker"><img class="front-face" data-title="joker" alt="joker" src="img/Joker.jpg"><img class="back-face pair-2 " data-title="joker" alt="joker" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="Joker"><img class="front-face" data-title="joker" alt="joker" src="img/Joker.jpg"><img class="back-face pair-2 " data-title="joker" alt="joker" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="dr-octopus"><img class="front-face" data-title="dr-octopus" alt="dr-octopus" src="img/dr-octopus.jpg"><img class="back-face pair-2 " data-title="dr-octopus" alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="dr-octopus"><img class="front-face" data-title="dr-octopus" alt="dr-octopus" src="img/dr-octopus.jpg"><img class="back-face pair-2 " data-title="dr-octopus" alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="venom"><img class="front-face" data-title="venom" alt="venom" src="img/venom.jpg"><img class="back-face pair-2 " data-title="venom" alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="venom"><img class="front-face" data-title="venom" alt="venom" src="img/venom.jpg"><img class="back-face pair-2 " data-title="venom" alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="loki"><img class="front-face" data-title="loki" alt="loki" src="img/loki.jpg"><img class="back-face pair-2 " data-title="loki" alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="loki"><img class="front-face" data-title="loki" alt="loki" src="img/loki.jpg"><img class="back-face pair-2 " data-title="loki" alt="card back" src="img/villain-background.jpg"></div>
+ <div class="memory-card" data-title="thanos"><img class="front-face" data-title="thanos" alt="thanos" src="img/thanos.png"><img class="back-face pair-2 " data-title="thanos" alt="card back" src="img/villain-background.jpg"></div>
+<div class="memory-card" data-title="thanos"><img class="front-face" data-title="thanos" alt="thanos" src="img/thanos.png"><img class="back-face pair-2 " data-title="thanos" alt="card back" src="img/villain-background.jpg"></div>
 
 </div>
 <div class="actions"><p id="actiontext"></p></div>

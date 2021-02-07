@@ -4,11 +4,78 @@
     box-sizing:border-box;
 }
 
+
+
 body {
     height: 100vh;
     background-color:#afceed; /*#a3c4cc #c2e6ed */
     display:flex;
 }
+
+#start-page{
+    height:100vh;
+    width:100vw;
+    display:inline-block;
+    z-index: 2;
+    position: absolute;
+}
+
+.start-page-inner-container{
+
+    position: relative;
+    height: 99vh;
+    width:99vw;
+
+
+}
+
+.start-page-text-container{
+
+    position: relative;
+    width: 400px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hero{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 75px;
+}
+
+.start-page-text{
+    font-size: 2.5em;
+    color:yellow;
+    font-family: 'Bangers', cursive;
+
+
+}
+#explanation{
+    font-size:0.7em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.hide-game-board{
+    visibility: hidden;
+}
+
+#start-button{
+
+    background-color:orange;
+}
+#start-button:hover{
+    font-size: 1.5em;
+    cursor:pointer;
+}
+
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -45,20 +112,14 @@ body {
     color: black;
 }
 
-.actiontext{
-    z-index:2;
-    border:solid 1px green;
-    display: flex;
-    min-width:20vw;
-    flex-wrap:wrap;
-}
-
 #actiontext{
-    color:white;
+
     font-size:2em;
     vertical-align: middle;
     overflow:hidden;
     position: relative;
+    font-family: 'Bangers', cursive;
+    color:yellow;
 }
 
 #game-board{
@@ -179,9 +240,7 @@ img{
     height:50%;
     width:50%;
     margin-left:15%;
-
     padding:0;
-    background-image:url("img/Leonardo-Dicaprio-Cheers.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -207,46 +266,48 @@ img{
     transform: translate(-50%, -50%);
 }
 
-.button-style{
-
-    width:100px;
-    height:30px;
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: bottom;
-    border:none;
-    border-radius:5px;
-      background-color:slategrey;
-
-}
-.button-style:hover{
-    cursor: pointer;
-    background-color:white;
-}
-
-.end-screen-text{
-    margin-top:20px;
-    text-align: center;
-    color:whitesmoke;
-
-    font-size:50px;
-    font-family: 'Orbitron', sans-serif;
-    text-shadow: 2px 2px #222222 ;
-
-}
-
 .end-screen-cont{
-position:relative;
+    position:relative;
     height:100%;
     width:100%;
 
     display:inline-table;
 }
 
+.end-screen-text{
+    margin-top:20px;
+    text-align: center;
+    color:yellow;
+
+    font-size:10em;
+    font-family: 'Bangers', cursive;
+    text-shadow: 2px 2px #222222 ;
+
+}
+
+.end-screen-button{
+    color: yellow;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    border:none;
+    font-size: 3em;
+    background-color:orange;
+    font-family: 'Bangers', cursive;
+
+}
+.end-screen-button:hover{
+    cursor: pointer;
+    background-color:white;
+}
 
 
 .hide{
-    display:none;
+    visibility: hidden;
 }
+
+
+
+
+
